@@ -1,7 +1,7 @@
 import { NextRequest } from "next/server";
-import { createContext } from "@/app/helpers/createContext";
-import { processError } from "@/app/helpers/processError";
-import { generateReadme } from "@/app/helpers/generateReadme";
+import { processError } from "@/app/api/generate/lib/processError";
+import { createContext } from "@/app/api/generate/lib/createContext";
+import { generateReadme } from "@/app/api/generate/lib/generateReadme";
 
 interface GenerateRequest {
   type: "url" | "description";

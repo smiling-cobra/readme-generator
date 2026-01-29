@@ -1,5 +1,5 @@
 import Anthropic from "@anthropic-ai/sdk";
-import { createContent } from "@/app/helpers/generateContent";
+import { createContent } from "@/app/api/generate/lib/createContent";
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,

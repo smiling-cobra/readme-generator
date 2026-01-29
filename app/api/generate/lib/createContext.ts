@@ -1,4 +1,4 @@
-import { fetchGitHubRepo } from "./fetchGithubRepo";
+import { fetchGitHubRepo } from "@/app/api/generate/lib/fetchGithubRepo";
 
 export const createContext = async (
   type: "url" | "description",
