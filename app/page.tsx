@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import InputForm from "./components/InputForm";
-import ResultsDisplay from "./components/ResultsDisplay";
+import InputForm from "@/app/components/InputForm";
+import ResultsDisplay from "@/app/components/ResultsDisplay";
 
 interface GenerateData {
   type: string;
@@ -131,6 +131,30 @@ export default function Home() {
               <p className="text-slate-600">
                 Copy it to your clipboard or download as README.md
               </p>
+
+              {/* Buy me a coffee banner */}
+              <div className="bg-linear-to-r from-yellow-50 to-orange-50 border border-yellow-200 rounded-lg p-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">☕</span>
+                  <div className="text-center sm:text-left">
+                    <p className="font-medium text-slate-900">
+                      Found this helpful?
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      Support the project with a coffee!
+                    </p>
+                  </div>
+                </div>
+
+                <a
+                  href="https://buymeacoffee.com/smiling_cobra"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-5 py-2 bg-yellow-400 hover:bg-yellow-500 text-slate-900 font-medium rounded-lg transition-all shadow-sm hover:shadow-md whitespace-nowrap"
+                >
+                  Buy me a coffee
+                </a>
+              </div>
             </div>
 
             <ResultsDisplay readme={readme} onReset={handleReset} />
